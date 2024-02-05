@@ -13,7 +13,6 @@
                     justifyContent="Center">
                 <VBox>
                     <VBox class="login-input-wrap">
-                        <!-- 로고 이미지 -->
                         <VBox class="inner-wrap">
                             <VBox>
                                 <!-- 아이디 -->
