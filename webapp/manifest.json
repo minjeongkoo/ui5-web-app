@@ -1,0 +1,98 @@
+{
+  "_version": "1.0.0",
+  "sap.app": {
+    "id": "ui5webapp",
+    "type": "application",
+    "i18n": "/i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "ach": "ach",
+    "dataSources": {}
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "ui5webapp.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "app"
+    },
+    "dependencies": {
+      "minUI5Version": "1.72.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.webc.main": {}
+      },
+      "components": []
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "ui5webapp.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "path": "ui5webapp.view",
+        "controlId": "app",
+        "controlAggregation": "pages",
+        "async": true
+      },
+      "routes": [
+        {
+          "name": "home",
+          "pattern": "",
+          "target": "home"
+        },
+        {
+          "pattern": "login",
+          "name": "login",
+          "target": "loginView"
+        }
+      ],
+      "targets": {
+        "home": {
+          "type": "View",
+          "name": "Home"
+        },
+        "loginView": {
+          "viewName": "Login",
+          "viewLevel": 1,
+          "viewId": "login",
+          "controlAggregation": "pages"
+        }
+      }
+    }
+  }
+}

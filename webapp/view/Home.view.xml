@@ -1,0 +1,22 @@
+<!--<mvc:View controllerName="ui5webapp.controller.Home"-->
+<mvc:View controllerName="ui5webapp.controller.Home"
+          displayBlock="true"
+          xmlns="sap.m"
+          xmlns:main="sap.ui.webc.main"
+          xmlns:fiori="sap.ui.webc.fiori"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns:l="sap.ui.layout">
+    <Page showHeader="false">
+        <main:TabContainer >
+            <main:Tab text="홈"/>
+            <main:Tab text="창고 관리"/>
+            <main:Tab text="조달 생산 관리"/>
+            <main:Tab text="정보 관리"/>
+            <main:Tab text="관리자"/>
+            <main:Tab text="사용자 정보 수정"/>
+        </main:TabContainer>
+        <VBox class="page-padding">
+            <Text text="안녕하세요 00님" class="headline1"></Text>
+        </VBox>
+    </Page>
+</mvc:View>

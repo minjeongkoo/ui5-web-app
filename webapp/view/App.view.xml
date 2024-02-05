@@ -1,0 +1,15 @@
+<mvc:View displayBlock="true"
+          xmlns="sap.m"
+          xmlns:mvc="sap.ui.core.mvc">
+    <Page class="page-title-bar" showHeader="true" showNavButton="true" title="대시보드">
+        <headerContent>
+            <Button icon="sap-icon://bell-2"/>
+            <Avatar displaySize="XS"
+                    fallbackIcon="sap-icon://person-placeholder"
+                    backgroundColor="Random"
+                    ariaHasPopup="Menu"
+                    press="onPressSetUserInfo"/>
+        </headerContent>
+        <App id="app"/>
+    </Page>
+</mvc:View>

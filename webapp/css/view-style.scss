@@ -1,0 +1,47 @@
+.full-width {
+  width: 100% !important;
+}
+
+.error-message {
+  background-color: #FFEAF4 !important;
+  padding: 0.625rem;
+  border-radius: 4px;
+  border: 1px solid #FF8EC4;
+}
+
+.login-view {
+  height: 100% !important;
+
+  .sapMPanelContent {
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login-input-wrap {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+    .logo-area {
+      text-align: center;
+
+      img {
+        width: 103px;
+      }
+    }
+  }
+
+  .inner-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    min-width: 360px;
+  }
+}

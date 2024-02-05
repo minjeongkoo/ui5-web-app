@@ -1,0 +1,71 @@
+<mvc:View controllerName="ui5webapp.controller.Login"
+          displayBlock="true"
+          xmlns="sap.m"
+          xmlns:fiori="sap.ui.webc.fiori"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns:l="sap.ui.layout"
+>
+    <Page showHeader="false">
+        <Panel class="login-view">
+            <FlexBox
+                    height="100px"
+                    alignItems="Center"
+                    justifyContent="Center">
+                <VBox>
+                    <VBox class="login-input-wrap">
+                        <!-- 로고 이미지 -->
+                        <VBox class="logo-area">
+                            <Image src="../assets/Logo.png" class="logo-type"></Image>
+                        </VBox>
+                        <VBox class="inner-wrap">
+                            <VBox>
+                                <!-- 아이디 -->
+                                <Label text="아이디" required="true" labelFor="productInput"/>
+                                <Input
+                                        id="idInput"
+                                        showSuggestion="true"
+                                        showValueHelp="false"
+                                        maxLength="40"
+                                        placeholder="아이디를 입력해주세요"/>
+                            </VBox>
+                            <VBox>
+                                <!-- 비밀번호 -->
+                                <Label text="비밀번호" required="true" labelFor="productInput"/>
+                                <Input
+                                        id="passwordInput"
+                                        showSuggestion="true"
+                                        showValueHelp="false"
+                                        type="Password"
+                                        maxLength="40"
+                                        placeholder="비밀번호를 입력해주세요"/>
+                            </VBox>
+                            <CheckBox text="자동 로그인" selected="true"/>
+                        </VBox>
+
+                        <!--                    <MessageStrip-->
+                        <!--                            text="아이디, 비밀번호를 다시 확인해주세요"-->
+                        <!--                            type="Negative"-->
+                        <!--                            class="sapUiMediumMarginBottom"-->
+                        <!--                            close="handleClose">-->
+                        <!--                    </MessageStrip>-->
+                        <VBox>
+                            <!-- 에러 메시지 -->
+                            <HBox class="error-message">
+                                <Text text="아이디와 비밀번호를 다시 입력해 주세요."></Text>
+                            </HBox>
+
+                            <!-- 로그인 버튼 -->
+                            <Button text="로그인" press="onLoginPress" type="Emphasized" class="primary-btn full-width"></Button>
+
+                            <!-- 아이디 / 비밀번호 찾기 버튼 -->
+                            <Button text="아이디 / 비밀번호 찾기" press="onResetAccountPress" type="Transparent" class="full-width"></Button>
+                        </VBox>
+                    </VBox>
+
+                    <!-- 회원가입 -->
+                    <Button text="아직 계정이 없으신가요? 회원가입하기 >" press="onResetAccountPress" type="Transparent" class="full-width"></Button>
+                </VBox>
+            </FlexBox>
+        </Panel>
+    </Page>
+</mvc:View>

@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'SAP 72 Black';
+  src: url('../css/fonts/72-Black-full.woff') format('woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'SAP 72 Bold';
+  src: url('../css/fonts/72-Bold-full.woff') format('woff');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'SAP 72 Regular';
+  src: url('../css/fonts/72-Regular-full.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'SAP 72 SemiBold';
+  src: url('../css/fonts/72-Semibold-full.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'SAP 72 Light';
+  src: url('../css/fonts/72-Light-full.woff') format('woff');
+  font-weight: 300;
+}
+
+p, lable {
+  font-family: "SAP 72 Regular" !important;
+  color: #1D2D3E;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-style: normal !important; /* 기울임 스타일을 없앰 */
+}
+
+.sapMLabel {
+  color: #556B82;
+}
+
+.sapMTitle {
+  color: #556B82 !important;
+}
+
+.page-padding {
+  padding: 1rem;
+}
+
+.headline1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
