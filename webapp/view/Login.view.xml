@@ -14,9 +14,6 @@
                 <VBox>
                     <VBox class="login-input-wrap">
                         <!-- 로고 이미지 -->
-                        <VBox class="logo-area">
-                            <Image src="../assets/Logo.png" class="logo-type"></Image>
-                        </VBox>
                         <VBox class="inner-wrap">
                             <VBox>
                                 <!-- 아이디 -->
